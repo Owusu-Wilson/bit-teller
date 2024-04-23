@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bit Teller</title>
+
+    <!-- Reset -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Bit Teller</h1>
+    </header>
+
+    <h2>Select Number of Bits</h2>
+
+    <div class="bit-switcher-container">
+      <div class="switch">
+        <h2>2</h2>
+        <figure id="ribsy"></figure>
+      </div>
+      <div class="switch">
+        <h2>4</h2>
+        <figure id="ribsy"></figure>
+      </div>
+      <div class="switch">
+        <h2>8</h2>
+        <figure id="ribsy"></figure>
+      </div>
+      <div class="switch">
+        <h2>16</h2>
+        <figure id="ribsy"></figure>
+      </div>
+    </div>
+    <div class="limit">
+      <h3>Computation Limit: <span id="limit">n</span></h3>
+    </div>
+
+    <div class="input-container">
+      <h2>Enter Your Number</h2>
+      <div class="button-container">
+        <input type="number" name="user-number" id="input" />
+        <button id="reset-button">CLEAR</button>
+      </div>
+    </div>
+    <div class="bulbs-container">
+      <div class="bulb" id="bulb-1">
+        <img src="./assets/bulb-off.png" alt="bulb-on" srcset="" />
+        <h2>
+          2<span>n</span>
+          <figure></figure>
+        </h2>
+      </div>
+      <div class="bulb" id="bulb-2">
+        <img src="./assets/bulb-off.png" alt="bulb-on" srcset="" />
+        <h2>
+          2<span>n</span>
+          <figure></figure>
+        </h2>
+      </div>
+      <div class="bulb" id="bulb-3">
+        <img src="./assets/bulb-off.png" alt="bulb-on" srcset="" />
+        <h2>
+          2<span>n</span>
+          <figure></figure>
+        </h2>
+      </div>
+      <div class="bulb" id="bulb-4">
+        <img src="./assets/bulb-off.png" alt="bulb-on" srcset="" />
+        <h2>
+          2<span>n</span>
+          <figure></figure>
+        </h2>
+      </div>
+      <div class="bulb" id="bulb-5">
+        <img src="./assets/bulb-off.png" alt="bulb-on" srcset="" />
+        <h2>
+          2<span>n</span>
+          <figure></figure>
+        </h2>
+      </div>
+      <div class="bulb" id="bulb-6">
+        <img src="./assets/bulb-off.png" alt="bulb-on" srcset="" />
+        <h2>
+          2<span>n</span>
+          <figure></figure>
+        </h2>
+      </div>
+      <div class="bulb" id="bulb-7">
+        <img src="./assets/bulb-off.png" alt="bulb-on" srcset="" />
+        <h2>
+          2<span>n</span>
+          <figure></figure>
+        </h2>
+      </div>
+      <div class="bulb" id="bulb-8">
+        <img src="./assets/bulb-off.png" alt="bulb-on" srcset="" />
+        <h2>
+          2<span>n</span>
+          <figure></figure>
+        </h2>
+      </div>
+      <div class="bulb" id="bulb-9">
+        <img src="./assets/bulb-off.png" alt="bulb-on" srcset="" />
+        <h2>
+          2<span>n</span>
+          <figure></figure>
+        </h2>
+      </div>
+      <div class="bulb" id="bulb-10">
+        <img src="./assets/bulb-off.png" alt="bulb-on" srcset="" />
+        <h2>
+          2<span>n</span>
+          <figure></figure>
+        </h2>
+      </div>
+      <div class="bulb" id="bulb-11">
+        <img src="./assets/bulb-off.png" alt="bulb-on" srcset="" />
+        <h2>
+          2<span>n</span>
+          <figure></figure>
+        </h2>
+      </div>
+      <div class="bulb" id="bulb-12">
+        <img src="./assets/bulb-off.png" alt="bulb-on" srcset="" />
+        <h2>
+          2<span>n</span>
+          <figure></figure>
+        </h2>
+      </div>
+      <div class="bulb" id="bulb-13">
+        <img src="./assets/bulb-off.png" alt="bulb-on" srcset="" />
+        <h2>
+          2<span>n</span>
+          <figure></figure>
+        </h2>
+      </div>
+      <div class="bulb" id="bulb-14">
+        <img src="./assets/bulb-off.png" alt="bulb-on" srcset="" />
+        <h2>
+          2<span>n</span>
+          <figure></figure>
+        </h2>
+      </div>
+      <div class="bulb" id="bulb-15">
+        <img src="./assets/bulb-off.png" alt="bulb-on" srcset="" />
+        <h2>
+          2<span>n</span>
+          <figure></figure>
+        </h2>
+      </div>
+      <div class="bulb" id="bulb-16">
+        <img src="./assets/bulb-off.png" alt="bulb-on" srcset="" />
+        <h2>
+          2<span>n</span>
+          <figure></figure>
+        </h2>
+      </div>
+    </div>
+    <section class="total">
+      <h2 id="output">0</h2>
+    </section>
+  </body>
+  <footer>
+    <h2>Copyright@Wilson 2024</h2>
+    <h2>🔔</h2>
+  </footer>
+  <script src="script.js"></script>
+</html>
