@@ -1,11 +1,12 @@
 // 💡🔆🔅☀
 
 const lightsObject = {
-  lightOn: { bitValue: 1, image: "./assets/bulb-on.png" },
-  lightOff: { bitValue: 0, image: "./assets/bulb-off.png" },
+  lightOn: { bitValue: 1, image: "./assets/images/bulb-on.png" },
+  lightOff: { bitValue: 0, image: "./assets/images/bulb-off.png" },
 };
 
 let number_of_bits = 0;
+let user_input = 0;
 let computed_binary_text = "";
 console.log("Scripts Started...");
 
@@ -29,7 +30,7 @@ const clearButton = document.getElementById("reset-button");
 switches.forEach((switchElement) => {
   switchElement.addEventListener("click", () => {
     // Clear the number input field
-    inputField.value = "";
+    inputField.value = user_input;
     // Remove 'active' class from all switch elements
     switches.forEach((switchEl) => {
       switchEl.querySelector("h2").classList.remove("active");
@@ -59,6 +60,7 @@ switches.forEach((switchElement) => {
 inputField.addEventListener("input", function (event) {
   // Log the value of the input field when it changes
   let inputValue = event.target.value;
+  user_input = Number(inputValue);
   let binary_number = toBinary(Number(inputValue), number_of_bits);
   computed_binary_text = String(binary_number);
   console.log(event.target.value);
@@ -76,7 +78,9 @@ inputField.addEventListener("input", function (event) {
     const isBulbOn = computed_binary_text.charAt(index) === "1";
 
     // Update the src attribute of the img element based on whether the bulb should be on or off
-    img.src = isBulbOn ? "./assets/bulb-on.png" : "./assets/bulb-off.png";
+    img.src = isBulbOn
+      ? "./assets/images/bulb-on.png"
+      : "./assets/images/bulb-off.png";
 
     // Update the alt attribute for accessibility
     img.alt = isBulbOn ? `Bulb On` : "Bulb Off";

@@ -21,12 +21,54 @@ h3 {
   text-align: center;
 }
 
+.settings-container {
+  /* background-color: antiquewhite; */
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: flex-start;
+  margin: 10px;
+  gap: 1rem;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
 .bit-switcher-container {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  flex: 0.2;
+  flex-direction: column;
+  align-items: flex-start;
+
   width: 80%;
-  margin: 2rem auto;
+
+  padding: 1rem;
+  /* border-radius: 10px; */
+  border-right: 2px solid black;
+}
+
+.limit {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 0.2;
+
+  padding: 1rem;
+  border-right: 2px solid black;
+}
+
+.input-container {
+  width: fit-content;
+  display: flex;
+  flex: 0.6;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+.limit span {
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .switch {
@@ -92,9 +134,10 @@ footer {
 
 .bulbs-container {
   display: flex;
+  flex-grow: 1;
   justify-content: space-around;
   align-items: center;
-  width: 90%;
+
   margin: 4rem auto;
   /* margin-top: 4rem; */
 }
@@ -111,20 +154,6 @@ footer {
 .bulb span {
   font-size: 14px;
   vertical-align: super;
-}
-
-.total {
-  padding: 3px;
-  background-color: #1d1d1d;
-  color: white;
-  font-size: 20px;
-}
-
-.input-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
 }
 
 .input-container button {
@@ -152,7 +181,8 @@ footer {
   box-shadow: 0 0 0 2px rgba(45, 227, 240, 0.5); /* Add a custom focus outline */
 }
 input {
-  width: 70%;
+  width: 100%;
+
   height: 50px;
   border-radius: 5px;
   font-size: 22px;
@@ -163,15 +193,4 @@ input {
   display: flex;
   gap: 10px;
   margin-top: 5px;
-}
-
-.limit {
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 5px;
-  background-color: #585858;
-  /* width: fit-content; */
 }
